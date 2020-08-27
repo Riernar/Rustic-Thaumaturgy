@@ -1,4 +1,4 @@
-//Hello World
+//Hello Worlds
 
 package com.github.voxelfriend.rusticthaumaturgy.crafting;
 
@@ -106,32 +106,32 @@ public class Recipes {
 	
 	public static void addCrushingTubRecipes() {
 		//Cinderfire Wort Crushing Recipes
-		rustic.common.crafting.Recipes.add(new CrushingTubRecipe(new FluidStack(ModFluidsRT.CINDERFIRE_WORT, 125), new ItemStack(ModItemsRT.CINDERMOTE)));
-		rustic.common.crafting.Recipes.add(new CrushingTubRecipe(new FluidStack(ModFluidsRT.CINDERFIRE_WORT, 250), new ItemStack(BlocksTC.cinderpearl)));
+		rustic.common.crafting.Recipes.crushingTubRecipes.add(new CrushingTubRecipe(new FluidStack(ModFluidsRT.CINDERFIRE_WORT, 125), new ItemStack(ModItemsRT.CINDERMOTE)));
+		rustic.common.crafting.Recipes.crushingTubRecipes.add(new CrushingTubRecipe(new FluidStack(ModFluidsRT.CINDERFIRE_WORT, 250), new ItemStack(BlocksTC.cinderpearl)));
 		
 		//Shimmerdew Wort Crushing Recipes
-		rustic.common.crafting.Recipes.add(new CrushingTubRecipe(new FluidStack(ModFluidsRT.SHIMMERDEW_WORT, 125), new ItemStack(ModItemsRT.SHIMMERPETAL)));
-		rustic.common.crafting.Recipes.add(new CrushingTubRecipe(new FluidStack(ModFluidsRT.SHIMMERDEW_WORT, 250), new ItemStack(BlocksTC.shimmerleaf)));
+		rustic.common.crafting.Recipes.crushingTubRecipes.add(new CrushingTubRecipe(new FluidStack(ModFluidsRT.SHIMMERDEW_WORT, 125), new ItemStack(ModItemsRT.SHIMMERPETAL)));
+		rustic.common.crafting.Recipes.crushingTubRecipes.add(new CrushingTubRecipe(new FluidStack(ModFluidsRT.SHIMMERDEW_WORT, 250), new ItemStack(BlocksTC.shimmerleaf)));
 		
 		//Viscous Brew Crushing Recipes
-		rustic.common.crafting.Recipes.add(new CrushingTubRecipe(new FluidStack(ModFluidsRT.VISCOUS_WORT, 125), new ItemStack(ModItemsRT.VISCAP)));
-		rustic.common.crafting.Recipes.add(new CrushingTubRecipe(new FluidStack(ModFluidsRT.VISCOUS_WORT, 250), new ItemStack(BlocksTC.vishroom)));
+		rustic.common.crafting.Recipes.crushingTubRecipes.add(new CrushingTubRecipe(new FluidStack(ModFluidsRT.VISCOUS_WORT, 125), new ItemStack(ModItemsRT.VISCAP)));
+		rustic.common.crafting.Recipes.crushingTubRecipes.add(new CrushingTubRecipe(new FluidStack(ModFluidsRT.VISCOUS_WORT, 250), new ItemStack(BlocksTC.vishroom)));
 	}
 		
 	public static void addEvaporatingRecipes() {
 		//Tiny Pile of Blaze Powder Evaporation Recipe
-		rustic.common.crafting.Recipes.add(new EvaporatingBasinRecipe(new ItemStack(ModItemsRT.BLAZE_POWDER_TINY, 1),
+		rustic.common.crafting.Recipes.evaporatingRecipes.put(ModFluidsRT.CINDERFIRE_WORT, new EvaporatingBasinRecipe(new ItemStack(ModItemsRT.BLAZE_POWDER_TINY, 1),
 					new FluidStack(ModFluidsRT.CINDERFIRE_WORT, 500)));
 	}
 		
 	public static void addBrewingRecipes() {
 		//Cinderfire Whiskey Recipe
-		rustic.common.crafting.Recipes.add(new BrewingBarrelRecipe(new FluidStack(ModFluidsRT.CINDERFIRE_WHISKEY, 1), new FluidStack(ModFluidsRT.CINDERFIRE_WORT, 1)));
+		rustic.common.crafting.Recipes.brewingRecipes.add(new BrewingBarrelRecipe(new FluidStack(ModFluidsRT.CINDERFIRE_WHISKEY, 1), new FluidStack(ModFluidsRT.CINDERFIRE_WORT, 1)));
 		
 		//Shimmerdew Spirits Recipe
-		rustic.common.crafting.Recipes.add(new BrewingBarrelRecipe(new FluidStack(ModFluidsRT.SHIMMERDEW_SPIRITS, 1), new FluidStack(ModFluidsRT.SHIMMERDEW_WORT, 1)));
+		rustic.common.crafting.Recipes.brewingRecipes.add(new BrewingBarrelRecipe(new FluidStack(ModFluidsRT.SHIMMERDEW_SPIRITS, 1), new FluidStack(ModFluidsRT.SHIMMERDEW_WORT, 1)));
 		
 		//Viscous Brew Recipe
-		rustic.common.crafting.Recipes.add(new BrewingBarrelRecipe(new FluidStack(ModFluidsRT.VISCOUS_BREW, 1),new FluidStack(ModFluidsRT.VISCOUS_WORT, 1)));
+		rustic.common.crafting.Recipes.brewingRecipes.add(new BrewingBarrelRecipe(new FluidStack(ModFluidsRT.VISCOUS_BREW, 1),new FluidStack(ModFluidsRT.VISCOUS_WORT, 1)));
 	}
 }
