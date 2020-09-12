@@ -120,7 +120,7 @@ public class Recipes {
 		
 	public static void addEvaporatingRecipes() {
 		//Tiny Pile of Blaze Powder Evaporation Recipe
-		rustic.common.crafting.Recipes.evaporatingRecipes.put(ModFluidsRT.CINDERFIRE_WORT, new EvaporatingBasinRecipe(new ItemStack(ModItemsRT.BLAZE_POWDER_TINY, 1),
+		rustic.common.crafting.Recipes.evaporatingRecipes.add(new EvaporatingBasinRecipe(new ItemStack(ModItemsRT.BLAZE_POWDER_TINY, 1),
 					new FluidStack(ModFluidsRT.CINDERFIRE_WORT, 500)));
 	}
 		
